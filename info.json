@@ -1,0 +1,9 @@
+{
+	"name": "minable-intermediates",
+	"title": "Minable Intermediates",
+	"factorio_version": "0.17",
+	"author": "EnigmaticAussie",
+	"version": "0.17.2",
+	"dependencies": ["base >= 0.17.0"],
+	"description": "Adds Minable Intermediates as ore patches"
+}
