@@ -1,10 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version 0.17.3
+Date 28/02/19
+Changes:
+    - Player starts with an extra burner mining drill instead of electric mining drill
+    - Burner mining drills now accept fluid input
+    - Burner miners can no longer mine advanced intermediates (advanced circuits, processing units
+        and batteries)
+    - Adjusted ore generation settings (advanced intermediates should be more spread out now)
+    - Added Rail World setting defaults
+    - File formatting
+---------------------------------------------------------------------------------------------------
 Version 0.17.2
 Date 27/02/19
 Changes:
     - Give Players an offshore pump
     - Change electronic circuits to require water instead of steam
-
 ---------------------------------------------------------------------------------------------------
 Version 0.17.1
 Date 27/02/19

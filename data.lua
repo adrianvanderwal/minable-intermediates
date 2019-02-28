@@ -18,8 +18,6 @@ Fluid patches - pumpjack on intermediate oils
 Mixed Ore patches?
 
 --]]
-
-
 --[[
 
 TODO - Make it a function
@@ -38,12 +36,22 @@ for _, ore in pairs(mi_ores) do
 end
 
 --]]
+if not mi then
+    mi = {}
+end
+if not mi.lib then
+    mi.lib = {}
+end
 
-if not mi then mi = {} end
-if not mi.lib then mi.lib = {} end
+require("prototypes.resource-category")
 
-require("prototypes.iron-gear-wheel")
-require("prototypes.electronic-circuit")
-require("prototypes.advanced-circuit")
-require("prototypes.processing-unit")
-require("prototypes.battery")
+require("prototypes.ore-generation.iron-gear-wheel")
+require("prototypes.ore-generation.electronic-circuit")
+require("prototypes.ore-generation.advanced-circuit")
+require("prototypes.ore-generation.processing-unit")
+require("prototypes.ore-generation.battery")
+
+require("prototypes.items.burner-mining-drill")
+require("prototypes.items.electric-mining-drill")
+
+require("prototypes.map-gen-presets")
