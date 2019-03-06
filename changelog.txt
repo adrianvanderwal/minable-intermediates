@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version 0.17.5
+Date 06/03/19
+Changes:
+	- Overhaul of ore generation to be in line with new generation functions
+    - Resource generation is now procedural
+    - Added a setting per resource
+    - Added Rail-World and Rich-Resources Map settings
+---------------------------------------------------------------------------------------------------
 Version 0.17.4
 Date 28/02/19
 Changes:
