@@ -1,4 +1,4 @@
-require("functions")
+require("functions.recipes")
 if settings.startup["mi-easy-mode"].value == false then
 	mi.disable_recipe("iron-gear-wheel")
 	mi.disable_recipe("electronic-circuit")

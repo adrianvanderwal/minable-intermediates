@@ -65,12 +65,6 @@ data:extend(
 						noise_octaves_difference = -1.85,
 						noise_persistence = 0.4
 					}
-					--[[{
-				influence = -1.0,
-				starting_area_weight_optimal = 1,
-				starting_area_weight_range = 0,
-				starting_area_weight_max_range = 2,
-			}--]]
 				}
 			},
 			stage_counts = {2000, 1600, 1400, 1200, 800, 400, 200, 10},
