@@ -12,10 +12,7 @@ Batteries -
 
 Low Density Structures - might add later
 
-
 Fluid patches - pumpjack on intermediate oils
-
-Mixed Ore patches?
 
 --]]
 --[[
@@ -42,16 +39,51 @@ end
 if not mi.lib then
     mi.lib = {}
 end
+require("functions.ore-generation")
+require("functions.recipes")
+
+mi.resource_autoplace = require("__base__.prototypes.entity.demo-resource-autoplace")
+mi.next_resource_index = 100
+
+require("resourceconfigs.vanilla")
+
+for _, ore in pairs(mi.ores) do
+    if settings.startup[ore.name].value then
+        --mi.returnore(name, result, icon, mining_category, next_resource_index, tint, ore_graphic, ore_graphic_hr, has_starting_area_placement)
+        local ore_to_place =
+            mi.returnore(
+            ore.name,
+            ore.result,
+            ore.icon,
+            ore.mining_category,
+            mi.next_resource_index,
+            ore.tint,
+            ore.ore_graphic,
+            ore.ore_graphic_hr,
+            ore.has_starting_area_placement
+        )
+        data:extend(
+            {
+                {
+                    type = "autoplace-control",
+                    name = ore.name,
+                    richness = true,
+                    order = "b-e",
+                    category = "resource"
+                },
+                ore_to_place
+            }
+        )
+        --log(ore_to_place)
+        mi.next_resource_index = mi.next_resource_index + 1
+    end
+end
 
 require("prototypes.resource-category")
-
-require("prototypes.ore-generation.iron-gear-wheel")
-require("prototypes.ore-generation.electronic-circuit")
-require("prototypes.ore-generation.advanced-circuit")
-require("prototypes.ore-generation.processing-unit")
-require("prototypes.ore-generation.battery")
 
 require("prototypes.items.burner-mining-drill")
 require("prototypes.items.electric-mining-drill")
 
 require("prototypes.map-gen-presets")
+
+log(serpent.block(data.raw.resource))
