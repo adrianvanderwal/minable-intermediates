@@ -1,5 +1,5 @@
-function mi.returnore(ore, next_resource_index)
-    
+function mi.returnore(ore)
+
     local mi_stages = {
         sheet = {
             filename = ore.ore_graphic,
@@ -23,14 +23,13 @@ function mi.returnore(ore, next_resource_index)
     }
 
     return {
-        autoplace = mi.resource_autoplace.resource_autoplace_settings {
+        autoplace = resource_autoplace.resource_autoplace_settings {
             name = ore.name,
             order = "c",
             base_density = ore.base_density or 2,
             base_spots_per_km2 = ore.base_spots_per_km2 or 2.5,
             random_spot_size_minimum = 2,
             random_spot_size_maximum = 4,
-            resource_index = next_resource_index,
             regular_rq_factor_multiplier = ore.regular_rq_factor_multiplier or 1,
             has_starting_area_placement = ore.has_starting_area_placement or false
         },
