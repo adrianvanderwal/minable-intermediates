@@ -1,20 +1,37 @@
 ---------------------------------------------------------------------------------------------------
-Version 0.17.5
-Date 06/03/19
-Changes:
-	- Overhaul of ore generation to be in line with new generation functions
+Version: 2021.02.06
+Date: 2021.02.06
+  Changes:
+    - Updated to Factorio Version 1.1
+    - Updated versioning
+---------------------------------------------------------------------------------------------------
+Version: 1.2.1
+Date: 2020-08-15
+  Bugfixes:
+    - Minor script fix for cutscene
+---------------------------------------------------------------------------------------------------
+Version: 1.2.0
+Date: 2020-08-15
+  Changes:
+    - Changelog/code formatting; Update to 1.0
+    - Minor ore-ordering improvements
+---------------------------------------------------------------------------------------------------
+Version: 1.1.5
+Date: 06-03-19
+  Changes:
+    - Overhaul of ore generation to be in line with new generation functions
     - Resource generation is now procedural
     - Added a setting per resource
     - Added Rail-World and Rich-Resources Map settings
 ---------------------------------------------------------------------------------------------------
-Version 0.17.4
-Date 28/02/19
-Changes:
-	- Removed debug option from control.lua
+Version: 0.17.4
+Date: 28/02/19
+  Changes:
+    - Removed debug option from control.lua
 ---------------------------------------------------------------------------------------------------
-Version 0.17.3
-Date 28/02/19
-Changes:
+Version: 0.17.3
+Date: 28/02/19
+  Changes:
     - Player starts with an extra burner mining drill instead of electric mining drill
     - Burner mining drills now accept fluid input
     - Burner miners can no longer mine advanced intermediates (advanced circuits, processing units
@@ -23,14 +40,13 @@ Changes:
     - Added Rail World setting defaults
     - File formatting
 ---------------------------------------------------------------------------------------------------
-Version 0.17.2
-Date 27/02/19
-Changes:
+Version: 0.17.2
+Date: 27/02/19
+  Changes:
     - Give Players an offshore pump
     - Change electronic circuits to require water instead of steam
 ---------------------------------------------------------------------------------------------------
-Version 0.17.1
-Date 27/02/19
-Changes:
+Version: 0.17.1
+Date: 27/02/19
+  Changes:
     - Initial Release
----------------------------------------------------------------------------------------------------
