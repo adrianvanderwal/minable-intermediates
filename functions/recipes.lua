@@ -20,13 +20,13 @@ end
 function mi.remove_recipe_unlock(technology, recipe)
   if data.raw.technology[technology] and data.raw.technology[technology].effects then
     for i, effect in pairs(data.raw.technology[technology].effects) do
-      if effect.type == "unlock-recipe" and effect.recipe == recipe then
+      if effect.type == 'unlock-recipe' and effect.recipe == recipe then
         table.remove(data.raw.technology[technology].effects, i)
       end
     end
   else
     if not data.raw.technology[technology] then
-      log("Technology " .. technology .. " does not exist.")
+      log('Technology ' .. technology .. ' does not exist.')
     end
   end
 end
