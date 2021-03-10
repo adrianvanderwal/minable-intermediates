@@ -1,5 +1,5 @@
 script.on_event(
-  defines.events.on_player_created,
+  defines.events.on_cutscene_cancelled,
   function(event)
     local iteminsert = game.players[event.player_index].insert
     iteminsert {name = 'burner-mining-drill', count = 1}
